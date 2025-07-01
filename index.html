@@ -191,7 +191,9 @@ async function gerarPDF() {
   doc.setFontSize(10);
 
   // Texto no canto inferior esquerdo
-  doc.text("Orçamento gerado por: ______________________", x, pageHeight - 10);
+  doc.text("Orçamento gerado por: ______________________", x, pageHeight - 24);
+  doc.text("Endereço: Rua Eucaliptos 234, Maracanã, Colombo - PR", x, pageHeight - 17);
+  doc.text("Telefone: (41) 99669-8265  e  (41) 3537-6234", x, pageHeight - 10);
 
 
   // Salvar PDF
